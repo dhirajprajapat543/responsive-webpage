@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="inner">
+                <div class="logo"><a href="#"> MERA BHARAT</a></div>
+                <button type="button" class="open-nav">
+                    <span></span>
+                </button>
+                <ul class="nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="content">
+                <h2>Welcome to india</h2>
+                <h1>DO COME & VISIT <span>AGRA</span></h1>
+                <p>india once is not enough</p>
+                <div class="">
+                    <a href="#" class="btn">Learn More.</a>
+                    <a href="#" class="btn btn-green">Signup Here.</a>
+                </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        const openNav = document.querySelector(".open-nav");
+const Nav = document.querySelector(".nav");
+
+openNav.addEventListener("click",toggleNev);
+function toggleNev(){
+    Nav.classList.toggle("open");
+    openNav.classList.toggle("open");
+}
+    </script>
+</body>
+</html>
